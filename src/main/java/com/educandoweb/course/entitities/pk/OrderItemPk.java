@@ -11,7 +11,7 @@ import jakarta.persistence.ManyToOne;
 
 @Embeddable
 public class OrderItemPk implements Serializable {
-    
+
     @ManyToOne
     @JoinColumn(name = "order_id")
     private Order order;
@@ -19,7 +19,7 @@ public class OrderItemPk implements Serializable {
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
-    
+
     public Order getOrder() {
         return order;
     }
